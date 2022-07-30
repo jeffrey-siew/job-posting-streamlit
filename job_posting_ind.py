@@ -645,9 +645,7 @@ st.markdown(streamlit_style, unsafe_allow_html=True)
 ### SETTING THE STREAMLIT SIDEBAR ###
 #####################################
 
-st.sidebar.text('')
 ### Job Title Selection
-st.sidebar.markdown("Hey there! Welcome to Jeffrey's Job Post Analysis App. If you're on a mobile device, switch over to landscape for viewing ease. Give it a go!")
 st.sidebar.markdown("**To begin, please select one of the job title and industry** 👇")
 streamlit_job_list = return_job_list(df)
 default_job_title = st.sidebar.selectbox("Select one of the job title", (streamlit_job_list), key='default_job_title')
@@ -686,6 +684,12 @@ line1_spacer1, line1_1, line1_spacer2 = st.columns((.1, 1, .1))
 with line1_1:
     st.header(f'Analyzing the Job Posting History of: **{default_job_title}** job in **{default_job_industry}** industry')
 
+line2_spacer1, line2_1, line2_spacer2 = st.columns((.1, 1, .1))
+with line2_1:
+    st.markdown("Hey there! Welcome to Jeffrey's Job Post Analysis App. If you're on a mobile device, remain in portrait view are preferred. Give it a go!")
+    st.markdown("The sidebar house the filter options and ability to download the dataframe")
+    st.markdown("This web app is to showcase the capability of streamlit to delivery data products to end user.")
+    st.markdown("Streamlit are extremely versatile and fully pythonic")
 
 ############### Setting the streamlit Columns
 row31_space1, row31_1, row31_space2, row31_2, row31_space3 = st.columns(
