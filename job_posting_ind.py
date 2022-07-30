@@ -504,7 +504,7 @@ def plotly_salary_time_series(df, default_job_title, default_job_industry, salar
 
             fig.update_layout(
                 xaxis_title="Industry",
-                yaxis_title="No. of Job Posting",
+                yaxis_title=f"{salary_type}",
                 font=dict(
                     family="Roboto Condensed",
                     size=12,
@@ -686,10 +686,10 @@ with line1_1:
 
 line2_spacer1, line2_1, line2_spacer2 = st.columns((.1, 1, .1))
 with line2_1:
-    st.markdown("Hey there! Welcome to Jeffrey's Job Post Analysis App. If you're on a mobile device, remain in portrait view are preferred. Give it a go!")
+    st.markdown("Hey there! Welcome to Jeffrey's Job Post Analysis App. If you're on a mobile device, remain in portrait mode are recommended. Give it a go!")
     st.markdown("The sidebar house the filter options and ability to download the dataframe")
     st.markdown("This web app is to showcase the capability of streamlit to delivery data products to end user.")
-    st.markdown("Streamlit are extremely versatile and fully pythonic")
+    st.markdown("Streamlit are extremely versatile and fully pythonic, it aim to make it easier for data practitioner to develop data web app without using traditional frontend language")
 
 ############### Setting the streamlit Columns
 row31_space1, row31_1, row31_space2, row31_2, row31_space3 = st.columns(
