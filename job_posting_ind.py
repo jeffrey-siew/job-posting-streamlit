@@ -503,7 +503,7 @@ def plotly_salary_time_series(df, default_job_title, default_job_industry, salar
                 )
 
             fig.update_layout(
-                xaxis_title="Industry",
+                xaxis_title="year_month",
                 yaxis_title=f"{salary_type}",
                 font=dict(
                     family="Roboto Condensed",
@@ -589,7 +589,7 @@ def plotly_salary_industry_series(df, default_job_title, default_job_industry, s
             )
 
         fig.update_layout(
-            xaxis_title="industrial_class_level_0",
+            xaxis_title="industry",
             yaxis_title=f'{salary_type}',
             font=dict(
                 family="Roboto Condensed",
